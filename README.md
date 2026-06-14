@@ -45,7 +45,7 @@ If you want to run Loqui from source or modify the code:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/loqui.git
+   git clone https://github.com/Udaykiran3104/loqui.git
    cd loqui
    ```
 2. **Create a virtual environment**:
