@@ -1,0 +1,31 @@
+# Hotkey to hold while speaking
+# Options: ctrl+shift, alt+space, cmd+shift (Mac)
+hotkey:
+  keys: ["ctrl", "shift"]   # hold both simultaneously
+
+# Whisper model — tradeoff: accuracy vs speed vs RAM
+# tiny=39MB/fastest, base=74MB, small=244MB, medium=769MB
+model:
+  size: "base.en"              # Switched to base.en for much faster response times
+  language: "en"             # Enforce English for better accuracy
+  device: "cpu"              # 'cuda' if you have a GPU
+
+# Filler words to strip from transcription
+refiner:
+  filler_words:
+    - "um"
+    - "uh"
+    - "hmm"
+    - "hm"
+    - "mhm"
+    - "ha"
+    - "ah"
+    - "er"
+  fix_caps: true             # auto-capitalize first word
+  fix_punctuation: true      # basic end-of-sentence period
+
+# Output behaviour
+output:
+  copy_to_clipboard: true
+  auto_paste: true           # Ctrl+V after copying
+  notify: true               # desktop popup on completion

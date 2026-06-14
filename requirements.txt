@@ -1,0 +1,15 @@
+faster-whisper
+sounddevice
+numpy
+scipy
+pynput
+pyperclip
+plyer
+PyYAML
+torch
+torchaudio
+torchcodec
+pyautogui
+pystray
+pillow
+pyinstaller
